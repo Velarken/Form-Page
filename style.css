@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Twin Marker';
+    src: url('fonts/TwinMarker.woff2') format('woff2'),
+        url('fonts/TwinMarker.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MODERNIZ';
+    src: url('fonts/MODERNIZ.woff2') format('woff2'),
+        url('fonts/MODERNIZ.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Unageo';
+    src: url('fonts/Unageo-Regular.woff2') format('woff2'),
+        url('fonts/Unageo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Page Containers */
+div {
+    border:1px solid red;
+}
+.main-container {
+    display:flex;
+    flex-direction:row;
+    height:92vh;
+}
+.image-container {
+    flex:1;
+    height:100%;
+    object-fit:fill;
+    overflow:hidden;
+}
+.text-form-container {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    height:92vh;
+}
+
+
+/* Page Elements */
+ #background-image {
+    height:92vh;
+}
+.testimonial, .form-container, .footer {
+    flex:1;
+}
+
+/* Form Styling */
+fieldset {
+    text-wrap: nowrap;
+}
+#phone-number:valid {
+    border:2px outset green;
+}
+#phone-number:invalid {
+    border:2px outset red;
+}
