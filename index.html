@@ -10,6 +10,9 @@
     <div class="main-container">
         <div class="image-container">
             <img id="background-image" src="images/halie-west-25xggax4bSA-unsplash.jpg">
+            <p id="image-credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>        
+            <div id="logo-background"></div>
+            <img id="logo" src="images/odin-lined.png">
         </div>
         <div class="text-form-container">
             <div class="testimonial">
@@ -19,33 +22,31 @@
             <div class="form-container">
                 <form class="form">
                     <fieldset>
-                        <label>First Name</label>
+                        <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="first_name" placeholder="John" required>
-                        <label>Last Name</label>
-                        <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
-                    </fieldset>
-                    <fieldset>
-                        <label>Email</label>
+                        <label for="email">Email</label>
                         <input type="email" id="email-address" name="email_address" placeholder="johnsmith123@email.com" required>
-                        <label>Phone Number</label>
-                        <input type="number" id="phone-number" name="phone_number" placeholder="999-999-9999" pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$">
+                        <label for="password-create">Create Password</label>
+                        <input type="password-create" id="password-create" name="password_create"  required>
                     </fieldset>
                     <fieldset>
-                        <label>Create Password</label>
-                        <input type="password" id="password" name="password" required>
-                        <label>Confirm Password</label>
-                        <input type="password" id="password" name="password" required>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone_number" placeholder="999-999-9999" max="12" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" id="password-confirm" name="password_confirm"  required>
                     </fieldset>
                 </form>
             <div class="form-footer">
-                <button>Create Account</button>
+                <button id="submit-button" type="submit">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>    
             </div>
             <div class="footer"></div>
         </div>
     </div>
-    Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    
     
     <!-- No HTML Below This LIne -->
     <script src="script.js"></script> 
